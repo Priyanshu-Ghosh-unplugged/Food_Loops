@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- FoodLoops Green Color Palette -->
+    <color name="foodloops_green">#4CAF50</color>
+    <color name="foodloops_green_dark">#388E3C</color>
+    <color name="foodloops_green_light">#C8E6C9</color>
+
+    <!-- Gray Scale -->
+    <color name="gray_50">#F5F5F5</color>
+    <color name="gray_100">#F0F0F0</color>
+    <color name="gray_200">#E0E0E0</color>
+    <color name="gray_300">#CCCCCC</color>
+    <color name="gray_400">#AAAAAA</color>
+    <color name="gray_500">#808080</color>
+    <color name="gray_600">#666666</color>
+    <color name="gray_700">#444444</color>
+    <color name="gray_800">#222222</color>
+    <color name="gray_900">#111111</color>
+
+    <!-- Red Scale for Expiry Indicators -->
+    <color name="red_50">#FFEBEE</color>
+    <color name="red_100">#FFCDD2</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+
+    <!-- Additional Colors -->
+    <color name="amber_500">#FFC107</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="colorPrimary" />
+    <color name="categoryBackground" />
+    <color name="textPrimary" />
+    <color name="iconGray" />
+
+</resources>
