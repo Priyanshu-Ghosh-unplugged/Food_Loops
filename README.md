@@ -1,10 +1,11 @@
-# FoodLoops: Combatting Food Waste, One Bite at a Time 🌎
+# FoodLoops: Combatting Food Waste, One Bite at a Time, Selling nearing expiry goods at cheap rates 🌎
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
 FoodLoops is an innovative Android application meticulously crafted to tackle the global issue of food waste. By connecting consumers with retailers offering discounts on near-expiry products, we empower users to make conscious, sustainable shopping choices without breaking the bank. 
+You might n=be thinking that I have lost my mind while coding. But a reality check, a survey confirmed the results as well. The supermarkets are reducing their loss margins while users are increasing their profit margins.
 
 Imagine a world where delicious food doesn't end up in landfills, and saving money goes hand-in-hand with saving the planet. That's the future FoodLoops envisions.
 
