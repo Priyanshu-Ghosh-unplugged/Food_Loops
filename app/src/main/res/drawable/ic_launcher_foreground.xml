@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/food_plate"
+        android:src="@drawable/plate_background"
         android:contentDescription="A plate with various colorful food items arranged around a fried egg with a letter 'F' on the yolk"
         android:scaleType="centerCrop"
         android:background="@drawable/plate_background"

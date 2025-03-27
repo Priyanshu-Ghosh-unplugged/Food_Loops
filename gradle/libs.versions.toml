@@ -1,9 +1,9 @@
 [versions]
 agp = "8.9.1"
-androidxJunit = "1.1.4"
+androidxJunit = "1.2.1"
 circleimageview = "3.1.0"
-espressoCoreVersion = "3.5.0"
-glideVersion = "4.14.2"
+espressoCoreVersion = "3.6.1"
+glideVersion = "4.16.0"
 jakewhartonTimber = "5.0.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -31,7 +31,7 @@ cardview = "1.0.0"
 androidx-espresso-core-v350 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
 androidx-junit-v114 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
 circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
-github-glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+github-glide = { module = "com.github.bumptech.glide:glide", version = "4.14.0" }
 glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glideVersion" }
 jakewharton-timber = { module = "com.jakewharton.timber:timber", version.ref = "jakewhartonTimber" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -45,7 +45,7 @@ navigation-fragment = { group = "androidx.navigation", name = "navigation-fragme
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayoutVersion" }
-androidx-core = { group = "androidx.core", name = "core", version = "1.12.0-alpha01" }
+androidx-core = { group = "androidx.core", name = "core", version = "1.10.1" }
 google-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }

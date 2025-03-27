@@ -133,7 +133,6 @@
                         android:textColor="@color/gray_400"
                         android:textSize="14sp"
                         android:textStyle="normal"
-                        android:textDecoration="line-through"
                         tools:text="$12.99" />
 
                     <TextView

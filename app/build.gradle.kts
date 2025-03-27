@@ -62,7 +62,7 @@ dependencies {
 
     // Other utilities
     implementation (libs.jakewharton.timber)  // Logging
-    implementation (libs.mpandroidchart)  // Charts
+    //implementation (libs.mpandroidchart)  // Charts
 
     // Testing
     testImplementation (libs.junit)

@@ -68,7 +68,7 @@
                 android:layout_marginStart="4dp"
                 android:textColor="@color/gray_400"
                 android:textSize="12sp"
-                android:textDecoration="line-through"
+
                 tools:text="₹499/kg" />
 
             <TextView

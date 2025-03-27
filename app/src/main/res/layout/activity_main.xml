@@ -27,6 +27,7 @@
             android:textSize="48sp"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toTopOf="@+id/search_card"
+            app:layout_constraintEnd_toStartOf="@+id/profile_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
