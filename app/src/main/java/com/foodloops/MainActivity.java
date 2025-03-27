@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,11 +13,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.foodloops.R;
-import com.foodloops.CategoryAdapter;
-import com.foodloops.ProductAdapter;
-import com.foodloops.Product;
-import com.foodloops.Firebaseutils;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -119,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements
         categories.add(new CategoryItem("bakery", "Bakery", R.drawable.ic_bakery));
         categories.add(new CategoryItem("meat", "Meat", R.drawable.ic_meat));
 
-        categoryAdapter.updateCategories(categories);
+        //categoryAdapter.updateCategories(categories);
     }
 
     private void loadProducts(String categoryId) {

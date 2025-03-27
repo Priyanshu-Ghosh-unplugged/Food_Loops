@@ -18,14 +18,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:padding="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/product_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/back_button"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_left"
+                android:layout_width="64dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="80dp"
+                android:background="#262424"
+                android:src="@android:drawable/ic_menu_revert"
                 app:layout_constraintBottom_toBottomOf="@id/app_title"
+                app:layout_constraintEnd_toStartOf="@+id/app_title"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/app_title"
                 app:tint="@color/gray_700" />
@@ -61,10 +67,13 @@
             android:id="@+id/product_image"
             android:layout_width="match_parent"
             android:layout_height="256dp"
-            android:scaleType="centerCrop"
             android:background="@color/white"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/product_details_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header"
-            tools:src="@drawable/placeholder_image" />
+            tools:src="@drawable/burger_background" />
 
         <!-- Product Details -->
         <androidx.cardview.widget.CardView
@@ -176,7 +185,8 @@
                                 <ImageView
                                     android:layout_width="14dp"
                                     android:layout_height="14dp"
-                                    android:src="@drawable/ic_clock"
+                                    android:background="#CC5B5B"
+                                    android:src="@android:drawable/ic_menu_today"
                                     app:tint="@color/red_500" />
 
                                 <TextView
@@ -223,7 +233,7 @@
                                 <ImageView
                                     android:layout_width="14dp"
                                     android:layout_height="14dp"
-                                    android:src="@drawable/ic_shopping_bag"
+                                    android:src="@android:drawable/ic_menu_agenda"
                                     app:tint="@color/gray_500" />
 
                                 <TextView
@@ -287,7 +297,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_shopping_bag"
+                            android:src="@android:drawable/ic_menu_month"
                             app:tint="@color/gray_700" />
                     </androidx.cardview.widget.CardView>
 
@@ -334,7 +344,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_clock"
+                            android:src="@android:drawable/ic_lock_idle_alarm"
                             app:tint="@color/gray_700" />
                     </androidx.cardview.widget.CardView>
 
@@ -380,7 +390,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_map_pin"
+                            android:src="@android:drawable/ic_dialog_map"
                             app:tint="@color/gray_700" />
                     </androidx.cardview.widget.CardView>
 

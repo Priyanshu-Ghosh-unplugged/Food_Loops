@@ -28,6 +28,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     private int selectedPosition = 0; // Default to first position (usually "All")
 
     public interface OnCategoryClickListener {
+        void onCategoryClick(MainActivity.CategoryItem category);
+
         void onCategoryClick(Category category, int position);
     }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#42DCD4"
     android:padding="24dp"
     tools:context=".LoginActivity">
 
@@ -12,8 +13,8 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
-        android:src="@mipmap/ic_launcher"
         android:contentDescription="FoodLoops Logo"
+        android:src="@drawable/plate_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,28 +44,30 @@
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="352dp"
+        android:layout_height="68dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/button_outline_red"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="353dp"
+        android:layout_height="57dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/button_outline_red"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="12dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
@@ -78,6 +81,7 @@
         android:padding="12dp"
         android:text="Login"
         android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
@@ -89,6 +93,7 @@
         android:layout_marginTop="16dp"
         android:text="Forgot Password?"
         android:textColor="@color/red_500"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
@@ -99,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Don't have an account?"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/textViewRegister"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -112,6 +118,7 @@
         android:layout_marginStart="4dp"
         android:text="Register"
         android:textColor="@color/red_500"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewNoAccount"
         app:layout_constraintEnd_toEndOf="parent"

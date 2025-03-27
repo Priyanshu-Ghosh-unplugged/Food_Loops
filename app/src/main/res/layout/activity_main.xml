@@ -20,11 +20,13 @@
             android:id="@+id/app_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="cursive"
             android:text="FoodLoops"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="48sp"
             android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/search_card"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +34,7 @@
             android:id="@+id/profile_icon"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_user"
+            android:src="@drawable/plate_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/gray_700" />
@@ -58,8 +60,8 @@
 
                 <EditText
                     android:id="@+id/search_edit_text"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="290dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:background="@null"
                     android:hint="Search for groceries..."
@@ -69,11 +71,11 @@
 
                 <ImageView
                     android:id="@+id/search_icon"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_search"
-                    app:tint="@color/gray_400" />
+                    android:src="@android:drawable/ic_menu_search"
+                    app:tint="@color/black" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -84,10 +86,15 @@
         android:id="@+id/categories_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
         android:background="@color/white"
+        android:clipToPadding="false"
         android:paddingHorizontal="16dp"
         android:paddingVertical="16dp"
-        android:clipToPadding="false"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/banner_image"
+        app:layout_constraintEnd_toEndOf="@+id/banner_image"
+        app:layout_constraintStart_toStartOf="@+id/banner_image"
         app:layout_constraintTop_toBottomOf="@id/header" />
 
     <!-- Banner -->
@@ -96,8 +103,12 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
         android:src="@drawable/banner_image"
+        app:layout_constraintBottom_toTopOf="@+id/recommended_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/categories_recycler_view" />
 
     <!-- Product List -->
@@ -121,7 +132,10 @@
         android:layout_marginTop="12dp"
         android:clipToPadding="false"
         android:padding="8dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recommended_title" />
 
     <!-- Empty State -->
@@ -132,21 +146,21 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintTop_toBottomOf="@id/recommended_title">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_empty_state"
+            android:src="@android:drawable/sym_def_app_icon"
             app:tint="@color/gray_300" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="No products found"
+            android:text="NO ITEMS FOUND"
             android:textColor="@color/gray_700"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -166,7 +180,7 @@
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,9 +193,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/white"
-        app:itemIconTint="@color/bottom_nav_item_color"
-        app:itemTextColor="@color/bottom_nav_item_color"
+        app:itemIconTint="@color/gray_100"
+        app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/products_recycler_view"
         app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

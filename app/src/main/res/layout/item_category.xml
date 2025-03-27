@@ -5,18 +5,19 @@
     android:layout_width="100dp"
     android:layout_height="wrap_content"
     android:layout_margin="6dp"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="2dp"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/categoryBackground">
+    android:foreground="@drawable/button_outline_red"
+    app:cardBackgroundColor="@color/categoryBackground"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_width="372dp"
+        android:layout_height="match_parent"
+        android:background="#E0D3D3"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="12dp">
 
         <ImageView
@@ -24,17 +25,16 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/ic_default_category"
-            android:contentDescription="@string/category_icon" />
+            android:src="@drawable/ic_default_category" />
 
         <TextView
             android:id="@+id/category_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/category_name"
-            android:textSize="12sp"
+            android:text="category_name"
+            android:textAlignment="center"
             android:textColor="@color/textPrimary"
-            android:textAlignment="center" />
+            android:textSize="12sp" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
