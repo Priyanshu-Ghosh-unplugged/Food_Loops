@@ -5,7 +5,7 @@
 ## Overview
 
 FoodLoops is an innovative Android application meticulously crafted to tackle the global issue of food waste. By connecting consumers with retailers offering discounts on near-expiry products, we empower users to make conscious, sustainable shopping choices without breaking the bank. 
-You might n=be thinking that I have lost my mind while coding. But a reality check, a survey confirmed the results as well. The supermarkets are reducing their loss margins while users are increasing their profit margins.
+You might be thinking that I have lost my mind while coding. But a reality check, a survey confirmed the results as well. The supermarkets are reducing their loss margins while users are increasing their profit margins.
 
 Imagine a world where delicious food doesn't end up in landfills, and saving money goes hand-in-hand with saving the planet. That's the future FoodLoops envisions.
 
@@ -33,6 +33,51 @@ Imagine a world where delicious food doesn't end up in landfills, and saving mon
 * Firebase: Realtime Database, Authentication, Cloud Functions, Storage
 * Flask (Python): API development for machine learning model interactions
 * Python Libraries: NumPy, Pandas, Scikit-Learn/TensorFlow
+
+## Installation
+
+### Using Android Studio (Emulator/Physical Device)
+
+1.  **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/Priyanshu-Ghosh-unplugged/Food_Loops
+    ```
+
+2.  **Open in Android Studio:**
+
+    -   Open Android Studio.
+    -   Select "Open an existing Android Studio project".
+    -   Navigate to the cloned repository directory and select the `build.gradle` file.
+
+3.  **Build and Run:**
+
+    -   Connect your physical Android device via USB with USB debugging enabled, or start an Android Emulator.
+    -   Click the "Run" button (green play icon) in Android Studio.
+    -   Select your target device/emulator.
+    -   The app will be built and installed on the selected device/emulator.
+
+### Direct APK Installation (Physical Device)
+
+1.  **Download the APK:**
+
+    -   Navigate to the `app/build/outputs/apk/release/` or `app/build/outputs/apk/debug/` directory in your repository.
+    -   Download the `app-release.apk` (or `app-debug.apk`) file to your computer.
+    -   Transfer the APK file to your Android device via USB or other means.
+
+2.  **Enable "Install Unknown Apps":**
+
+    -   On your Android device, go to "Settings" > "Apps & notifications" (or similar).
+    -   Find and tap "Special app access" or "Install unknown apps".
+    -   Select the file manager app you used to transfer the APK.
+    -   Toggle the "Allow from this source" switch to enable installation.
+
+3.  **Install the APK:**
+
+    -   Use your file manager app to navigate to the location of the APK file.
+    -   Tap the APK file to begin the installation process.
+    -   Follow the on-screen instructions to complete the installation.
+
 
 ## How it Works ⚙️
 
