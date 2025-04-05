@@ -6,7 +6,7 @@
 
 FoodLoops is an innovative Android application meticulously crafted to tackle the global issue of food waste. By connecting consumers with retailers offering discounts on near-expiry products, we empower users to make conscious, sustainable shopping choices without breaking the bank. 
 You might be thinking that I have lost my mind while coding. But a reality check, a survey confirmed the results as well. The supermarkets are reducing their loss margins while users are increasing their profit margins.
-This has been developed keeping in mind he 17 UN Sustainable goals and are focussing on the problems of #No hunger and #No poverty
+This has been developed keeping in mind he 17 UN Sustainable goals and are focussing on the problems of **No hunger** and **No poverty**
 
 Imagine a world where delicious food doesn't end up in landfills, and saving money goes hand-in-hand with saving the planet. That's the future FoodLoops envisions.
 
